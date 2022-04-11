@@ -6,7 +6,7 @@
 #    By: bperron <bperron@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/06 12:43:05 by bperron           #+#    #+#              #
-#    Updated: 2022/04/11 13:08:16 by bperron          ###   ########.fr        #
+#    Updated: 2022/04/11 13:23:11 by bperron          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CFLAGS = -Werror -Wall -Wextra
 RM = rm -f
 LIB = ar rcs
 
-SRCS = ft_printf.c ft_printformatnbr.c ft_printformatchar.c #libft/Makefile
+SRCS = ft_printf.c ft_printformatnbr.c ft_printformatchar.c
 
 OBJS = $(SRCS:.c=.o)
 
