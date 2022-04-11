@@ -6,17 +6,15 @@
 /*   By: bperron <bperron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 13:01:24 by bperron           #+#    #+#             */
-/*   Updated: 2022/04/11 12:55:16 by bperron          ###   ########.fr       */
+/*   Updated: 2022/04/11 13:11:31 by bperron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
-
 
 int	ft_format(char format, va_list args)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (format == 'c')
@@ -31,18 +29,18 @@ int	ft_format(char format, va_list args)
 		ret = ft_printfu((unsigned int) va_arg(args, unsigned int));
 	else if (format == 'x' || format == 'X')
 		ret = ft_printfhex(format, va_arg(args, unsigned int));
-	else if (format == '%') 
-		{
-			write (1, "%", 1);
-			ret = 1;
-		}
+	else if (format == '%')
+	{
+		write (1, "%", 1);
+		ret = 1;
+	}
 	return (ret);
 }
 
 int	ft_printf(const char *format, ...)
 {
 	int		i;
-	int 	ret;
+	int		ret;
 	va_list	args;
 
 	if (!format)
@@ -65,13 +63,3 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (ret);
 }
-/*
-int main()
-{
-	void *test;
-	int sa = -1;
-	test = &sa;
-	printf("%d\n", ft_printf("%p\n", test));
-	printf("%d\n", printf("%p\n", test));
-
-} */

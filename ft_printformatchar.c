@@ -6,22 +6,21 @@
 /*   By: bperron <bperron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 10:09:59 by bperron           #+#    #+#             */
-/*   Updated: 2022/04/11 10:10:00 by bperron          ###   ########.fr       */
+/*   Updated: 2022/04/11 13:16:03 by bperron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "ft_printf.h"
 
-int ft_printfc(char c)
+int	ft_printfc(char c)
 {
-	write(1, &c,1);
+	write (1, &c, 1);
 	return (1);
 }
 
 int	ft_printfs(char *s)
 {
-	int ret;
+	int	ret;
 
 	ret = 0;
 	if (s == NULL)
@@ -30,6 +29,6 @@ int	ft_printfs(char *s)
 		return (6);
 	}
 	while (s[ret])
-		write(1, &s[ret++],1);
+		write (1, &s[ret++], 1);
 	return (ret);
 }
