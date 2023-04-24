@@ -1,5 +1,5 @@
 # ft_printf
-The goal of this 42 school project is to recreate the C standard library function `printf()`. We needed to discover and use variadic function. Variadic functions are function that can take a variable number of arguments. A minimum of one is required for `ft_printf()` and an additionnal one for each conversion.
+The goal of this 42 school project is to recreate the C standard library function `printf()` as a library named `"libftprintf.a"`. We needed to discover and use variadic function. Variadic functions are function that can take a variable number of arguments. A minimum of one is required for `ft_printf()` and an additionnal one for each conversion. After, this project is done, it can be added to `libft` to have a more complete library.
 # Mandatory
 The conversions that were required are the following:
   - %c, prints a char
@@ -12,3 +12,9 @@ The conversions that were required are the following:
   - %X, prints a number in hexadecimal uppercase format
   - %%, prints a percent sign
 # Usage
+To use this library, you have to:
+
+  1. Clone this repository into your project
+  2. Go to the root of the repository and use `make`
+  3. Include `"ft_printf.h"` in your project
+  4. Link the library at compile time by adding `-L/ft_printf_42 -lftprintf` to your compilation line 
