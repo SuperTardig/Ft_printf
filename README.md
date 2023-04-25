@@ -1,6 +1,6 @@
 # ft_printf
 The goal of this 42 school project is to recreate the C standard library function `printf()` as a library named `"libftprintf.a"`. We needed to discover and use variadic function. Variadic functions are function that can take a variable number of arguments. A minimum of one is required for `ft_printf()` and an additionnal one for each conversion. After, this project is done, it can be added to `libft` to have a more complete library.
-# Mandatory
+## Mandatory
 The conversions that were required are the following:
   - %c, prints a char
   - %s, prints a char* (string)
@@ -11,7 +11,7 @@ The conversions that were required are the following:
   - %x, prints a number in hexadecimal lowercase format
   - %X, prints a number in hexadecimal uppercase format
   - %%, prints a percent sign
-# Usage
+## Usage
 To use this library, you have to:
 
   1. Clone this repository into your project
